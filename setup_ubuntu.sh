@@ -1,14 +1,16 @@
 #!/bin/bash
 
+# Download and install all software required for blissful computing.
+# Note: may wish to comment out some packages if have space constraints.
 
-## Check network manager
-#sudo nm-connection
+# # Check network manager
+# sudo nm-connection
 
-## Update repositories
-#sudo apt-get update
+# # Update repositories
+# sudo apt-get update
 
-## Upgrade Ubuntu version
-#sudo apt-get dist-upgrade
+# # Upgrade Ubuntu version
+# sudo apt-get dist-upgrade
 
 # Basics
 sudo apt-get -y install vim screen rsync ssh git # git-flow
@@ -17,7 +19,7 @@ sudo apt-get -y install vim screen rsync ssh git # git-flow
 sudo apt-get -y install vlc inkscape nautilus-image-converter hugin xournal pdftk blender impressive
 sudo apt-get -y install flac lame alien enscript gimp gimp-data gimp-plugin-registry gimp-data-extras
 
-# codecs
+# Codecs
 sudo apt-get -y install ubuntu-restricted-extras libavcodec-extra libde265
 
 # Utilities
@@ -25,7 +27,7 @@ sudo apt-get -y install dconf-editor default-jdk dconf-tools gnome-disk-utility 
 sudo apt-get -y install rar unrar htop ppa-purge samba gparted openssh-server p7zip-full
 
 # Latex
-sudo apt-get -y install  texlive-full latexmk texlive-bibtex-extra
+sudo apt-get -y install texlive-full latexmk texlive-bibtex-extra
 
 # Numerics
 sudo apt-get -y install make gfortran libatlas-dev libsuitesparse-dev libstdc++5 gmsh cmake
@@ -52,10 +54,16 @@ sudo apt-get update
 sudo apt-get install sublime-text-installer google-chrome-stable
 
 # # Personal rc files
-# wget .bashrc
-# wget .vimrc .vimrc_qwerty
-# wget .screenrc
+cd ~
+wget https://raw.githubusercontent.com/bjornsturmberg/config/master/.bashrc
+wget https://raw.githubusercontent.com/bjornsturmberg/config/master/.vimrc
+wget https://raw.githubusercontent.com/bjornsturmberg/config/master/.vimrc_qwerty
+wget https://raw.githubusercontent.com/bjornsturmberg/config/master/.screenrc
+wget https://raw.githubusercontent.com/bjornsturmberg/config/master/.gitignore_global
+
+# cd ~/.config/matplotlib
 # wget bjorn_style.mplstyle
+
 # wget sublime macros
 
 # # Insert ssh keys

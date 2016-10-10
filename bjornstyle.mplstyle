@@ -1,3 +1,5 @@
+# Copy to .config/matplotlib/stylelib/
+
 lines.linewidth: 4
 lines.solid_capstyle: butt
 

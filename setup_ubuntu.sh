@@ -42,6 +42,7 @@ sudo apt-get -y install ipython python-sympy python-nose python-sphinx
 ## Install python packages
 sudo pip install restview joblib
 sudo pip install Sphinx
+sudo pip install sphinxcontrib-napoleon
 
 # Sublime Text 3
 sudo add-apt-repository ppa:webupd8team/sublime-text-3 -y

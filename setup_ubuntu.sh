@@ -7,7 +7,7 @@
 # sudo nm-connection
 
 # # Update repositories
-# sudo apt-get update
+sudo apt-get update
 
 # # Upgrade Ubuntu version
 # sudo apt-get dist-upgrade
@@ -16,7 +16,7 @@
 sudo apt-get -y install vim screen rsync ssh git # git-flow
 
 # Media
-sudo apt-get -y install vlc inkscape nautilus-image-converter hugin xournal pdftk blender impressive
+sudo apt-get -y install vlc inkscape nautilus-image-converter hugin xournal pdftk #blender impressive
 sudo apt-get -y install flac lame alien enscript gimp gimp-data gimp-plugin-registry gimp-data-extras
 
 # Codecs
@@ -27,7 +27,7 @@ sudo apt-get -y install dconf-editor default-jdk dconf-tools gnome-disk-utility 
 sudo apt-get -y install rar unrar htop ppa-purge samba gparted openssh-server p7zip-full
 
 # Latex
-sudo apt-get -y install texlive-full latexmk texlive-bibtex-extra
+sudo apt-get -y install texlive latexmk #texlive-bibtex-extra
 
 # Numerics
 sudo apt-get -y install make gfortran libatlas-dev libsuitesparse-dev libstdc++5 gmsh cmake
@@ -36,17 +36,22 @@ sudo apt-get -y install make gfortran libatlas-dev libsuitesparse-dev libstdc++5
 sudo apt-get -y install gnome-control-center gnome-online-accounts owncloud-client
 
 # python
-sudo apt-get -y install python-pip python-numpy python-scipy python-matplotlib
-sudo apt-get -y install ipython python-sympy python-nose python-sphinx
+sudo apt-get -y install python3-pip python3-numpy python3-scipy python3-matplotlib
+sudo apt-get -y install python3-sympy python3-nose python3-sphinx python3-pandas
 
 ## Install python packages
-sudo pip install restview joblib
-sudo pip install Sphinx
-sudo pip install sphinxcontrib-napoleon
+sudo pip3 install restview joblib
+sudo pip3 install Sphinx
+sudo pip3 install sphinxcontrib-napoleon
+sudo pip3 install requests requests_oauthlib
 
 # Sublime Text 3
-sudo add-apt-repository ppa:webupd8team/sublime-text-3 -y
-sudo add-apt-repository ppa:webupd8team/y-ppa-manager -y
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo apt-get update
+sudo apt-get install sublime-text
+# sudo add-apt-repository ppa:webupd8team/sublime-text-3 -y
+# sudo add-apt-repository ppa:webupd8team/y-ppa-manager -y
 # # Git-core
 # sudo add-apt-repository ppa:git-core/ppa -y
 # Chrome

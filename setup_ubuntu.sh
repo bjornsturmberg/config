@@ -36,11 +36,10 @@ sudo apt-get -y install make gfortran libatlas-dev libsuitesparse-dev libstdc++5
 sudo apt-get -y install gnome-control-center gnome-online-accounts owncloud-client
 
 # python
-sudo apt-get -y install python3-pip python3-numpy python3-scipy python3-matplotlib
-sudo apt-get -y install python3-sympy python3-nose python3-sphinx python3-pandas
+sudo apt-get -y install python3-pip python3-numpy python3-scipy python3-matplotlib python3-sympy python3-nose python3-sphinx python3-pandas
 
 ## Install python packages
-sudo pip3 install restview joblib Sphinx sphinxcontrib-napoleon requests requests_oauthlib
+sudo pip3 install pyomo networkx pytorch torch torchvision json restview joblib Sphinx sphinxcontrib-napoleon requests requests_oauthlib
 
 # Sublime Text 3
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -

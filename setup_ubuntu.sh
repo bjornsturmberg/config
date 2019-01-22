@@ -40,10 +40,7 @@ sudo apt-get -y install python3-pip python3-numpy python3-scipy python3-matplotl
 sudo apt-get -y install python3-sympy python3-nose python3-sphinx python3-pandas
 
 ## Install python packages
-sudo pip3 install restview joblib
-sudo pip3 install Sphinx
-sudo pip3 install sphinxcontrib-napoleon
-sudo pip3 install requests requests_oauthlib
+sudo pip3 install restview joblib Sphinx sphinxcontrib-napoleon requests requests_oauthlib
 
 # Sublime Text 3
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
@@ -67,6 +64,11 @@ wget https://raw.githubusercontent.com/bjornsturmberg/config/master/.vimrc
 wget https://raw.githubusercontent.com/bjornsturmberg/config/master/.vimrc_qwerty
 wget https://raw.githubusercontent.com/bjornsturmberg/config/master/.screenrc
 wget https://raw.githubusercontent.com/bjornsturmberg/config/master/.gitignore_global
+
+# # Install latest ownCloud
+# https://software.opensuse.org/download/package?project=isv:ownCloud:desktop&package=owncloud-client
+# https://duck.sh/
+
 
 # cd ~/.config/matplotlib
 # wget bjorn_style.mplstyle

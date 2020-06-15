@@ -37,6 +37,7 @@ sudo apt-get -y install gnome-control-center gnome-online-accounts owncloud-clie
 
 # python
 sudo apt-get -y install python3-pip python3-numpy python3-scipy python3-matplotlib python3-sympy python3-nose python3-sphinx python3-pandas
+sudo apt-get -y install fonts-humor-sans
 
 ## Install python packages
 sudo pip3 install pyomo networkx pytorch torch torchvision json restview joblib Sphinx sphinxcontrib-napoleon requests requests_oauthlib

@@ -57,6 +57,10 @@ sudo sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /e
 sudo apt-get update
 sudo apt-get install sublime-text-installer google-chrome-stable
 
+# Microsoft fonts
+sudo apt-get install cabextract
+wget -qO- http://plasmasturm.org/code/vistafonts-installer/vistafonts-installer | bash
+
 # # Personal rc files
 cd ~
 wget https://raw.githubusercontent.com/bjornsturmberg/config/master/.bashrc
